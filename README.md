@@ -1,48 +1,116 @@
-# 📰 Fake News Detection using Machine Learning
+# 🕵️ Tweet Fake News Detector
 
-This project is a lightweight and fast fake news classifier that takes in the title and body of a news article and predicts whether it's FAKE or REAL. It uses a clean ML pipeline with TF-IDF and Logistic Regression, and features a Streamlit-based web app for interactive testing.
-
-Built as a B.Tech CSE project to strengthen SDE-aligned ML profile and deploy-ready apps.
+A machine learning-powered web app to detect fake news in tweets, built with Python, scikit-learn, and Streamlit.
 
 ---
 
-## 🔧 Features
+## 🚀 Live Demo
 
-- Combines `title + text` for better context understanding
-- Trims input to 500 characters for consistent results
-- Clean preprocessing (punctuation removal, lowercasing, stopword clean)
-- TF-IDF feature extraction
-- Logistic Regression classifier with 98.5% accuracy
-- Fast and responsive Streamlit web interface
-- Shows prediction with confidence score
+Try the app here: [Streamlit Live App](YOUR_STREAMLIT_CLOUD_LINK_HERE)
 
 ---
 
-## 🗂️ Folder Structure
+## 📖 Project Overview
 
-fake-news-detector/
-├── fake_news_detection.ipynb → Complete training notebook
-├── fake_news_model_v2.pkl → Trained model (Logistic Regression + TF-IDF)
-├── streamlit_app.py → Web app using Streamlit
-├── requirements.txt → Python packages used
-└── README.md → Project overview and setup (this file)
-
+With the rise of misinformation on social media, this project aims to automatically detect fake news in tweets using machine learning. The app provides a simple interface for users to check if a tweet is likely to be fake or real.
 
 ---
 
-## ⚙️ How to Run Locally
+## 🗂️ Dataset
 
-1. Clone the repository
+- **Source:** `Truth_Seeker_Model_Dataset.csv`
+- **Features:**  
+  - Tweet text and various linguistic features (verb/adjective/pronoun counts, etc.)
+  - User metadata (followers, friends, statuses, bot score, etc.)
+  - Named Entity Recognition (NER) percentages (ORG, PERSON, GPE, etc.)
+- **Target:**  
+  - Binary label: 1 = True (real), 0 = Fake
 
+---
+
+## 🛠️ Technologies Used
+
+- **Python**: Core programming language
+- **pandas, numpy**: Data manipulation and numerical operations
+- **scikit-learn**: Machine learning (Logistic Regression, TF-IDF)
+- **joblib**: Model serialization
+- **Streamlit**: Web app interface
+
+---
+
+## 🧑‍💻 How It Works
+
+1. **Data Preprocessing:**  
+   - Cleans tweet text (removes URLs, mentions, hashtags, punctuation, etc.)
+   - Handles missing values
+
+2. **Feature Engineering:**  
+   - Uses TF-IDF vectorization for text features
+
+3. **Model Training:**  
+   - Logistic Regression classifier trained on cleaned tweet data
+
+4. **Evaluation:**  
+   - Model evaluated using accuracy and classification report
+
+5. **Deployment:**  
+   - Streamlit app for real-time predictions
+
+---
+
+## 🏃‍♂️ Getting Started
+
+### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/fake-news-detector.git
+git clone https://github.com/yourusername/fake-news-detector.git
 cd fake-news-detector
 ```
 
-2. Install the dependencies
-
+### 2. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
-3. Launch the web app
+### 3. Train the model (optional)
+```bash
+python train_tweet_fake_news_model.py
+```
 
-streamlit run streamlit_app.py
+### 4. Run the Streamlit app
+```bash
+streamlit run streamlit_tweet_detector.py
+```
+
+---
+
+## 🌐 Usage
+
+- Enter a tweet in the text box.
+- Click **Detect** to see if it’s likely fake or real.
+- View the confidence score and compare with the actual label (if known).
+
+---
+
+## 📊 Example
+
+![App Screenshot](screenshot.png) <!-- Add a screenshot if available -->
+
+---
+
+## 📎 Live App
+
+[Streamlit Live App](YOUR_STREAMLIT_CLOUD_LINK_HERE)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🙋‍♂️ Author
+
+- Your Name
+- [Your LinkedIn](https://www.linkedin.com/in/yourprofile)
+- [Your GitHub](https://github.com/yourusername) 
