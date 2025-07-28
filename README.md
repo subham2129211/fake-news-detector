@@ -6,7 +6,7 @@ A machine learning-powered web app to detect fake news in tweets, built with Pyt
 
 ## 🚀 Live Demo
 
-Try the app here: [Streamlit Live App](YOUR_STREAMLIT_CLOUD_LINK_HERE)
+Try the app here: [Streamlit Live App](https://fake-news-detector-tweets-4355454.streamlit.app/)
 
 ---
 
@@ -87,19 +87,20 @@ streamlit run streamlit_tweet_detector.py
 
 - Enter a tweet in the text box.
 - Click **Detect** to see if it’s likely fake or real.
-- View the confidence score and compare with the actual label (if known).
+- View the confidence score and compare with the actual label.
 
 ---
 
 ## 📊 Example
 
-![App Screenshot](screenshot.png) <!-- Add a screenshot if available -->
+![App Screenshot](<img width="1260" height="1030" alt="image" src="https://github.com/user-attachments/assets/25ccda1f-2df8-4914-9272-dcdc60c6f4e5" />
+)
 
 ---
 
 ## 📎 Live App
 
-[Streamlit Live App](YOUR_STREAMLIT_CLOUD_LINK_HERE)
+[Streamlit Live App](https://fake-news-detector-tweets-4355454.streamlit.app/)
 
 ---
 
@@ -112,5 +113,5 @@ This project is licensed under the MIT License.
 ## 🙋‍♂️ Author
 
 - Your Name
-- [Your LinkedIn](https://www.linkedin.com/in/yourprofile)
-- [Your GitHub](https://github.com/yourusername) 
+- [Your LinkedIn](https://www.linkedin.com/in/subham-pratik-das-b5476324a)
+- [Your GitHub](https://github.com/subham2129211) 
